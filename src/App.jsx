@@ -8,11 +8,11 @@ import ag6 from '../src/assets/ag6.png';
 import pose1 from '../src/assets/pose1.jpg';
 import pose2 from '../src/assets/pose2.jpg';
 import pose3 from '../src/assets/pose3.jpg';
-// import Navigation from '../src/components/Navigation';
+import NavBar from '../src/components/NavBar'
 function App() {
   return (
     <>
-      {/* <Navigation /> */}
+      <NavBar />
       <div className="container">
       <div className="portada">
           <h1 className="Nove">VYOM</h1> 

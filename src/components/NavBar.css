@@ -1,0 +1,104 @@
+@font-face {
+    font-family: Nove;
+    src: url('/src/assets/Nove.ttf');
+  }
+  @font-face {
+    font-family: Halimum;
+    src: url('/src/assets/Halimun.ttf');
+  }
+
+header{
+    background-color: #faf9f7;
+}
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.nav-branding{
+    font-size: 2rem;
+    color: #344033;
+    font-weight: 400;
+    font-family: Nove;
+}
+.nav-branding span{
+    font-family: Halimum;
+    font-size: 15px;
+}
+.nav-link{
+    transition: 0.7s ease;
+    color: #344033;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.nav-link:hover{
+    color: white;
+    background-color: #344033;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -transition: all 0.3s ease-in-out;
+    background-color: #344033;
+}
+
+@media screen and (max-width: 480px){
+    .hamburger{
+        display: block;
+    }
+    .hamnburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamnburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamnburger.active .bar:nth-child(3){
+        transform: translateY(8px) rotate(-45deg);
+    }
+    .nav-menu{
+        z-index: 3;
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #faf9f7;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0%;
+    }
+
+}
