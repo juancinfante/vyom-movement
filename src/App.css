@@ -8,6 +8,7 @@
   font-family: Halimum;
   src: url('/src/assets/Halimun.ttf');
 }
+
 .Nove{
   font-family: Nove !important;
 }
@@ -16,8 +17,7 @@
 }
 
 .App {
-  background-color: #faf9f7;
-  height: 100vh;
+  background-color: #f5eede;
   width: 100%;
 }
 *{
@@ -26,8 +26,8 @@
   box-sizing: border-box;
 }
 .container{
-  width: 100%;
-  background-color: #f5eede;
+  width: 1300px;
+  margin: 0 auto;
 }
 
 .portada{
@@ -79,7 +79,6 @@
 
 .section1{
   width: 100%;
-  height: 100vh;
   display: flex;
   align-items: center;
   letter-spacing: 1px;
@@ -114,12 +113,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  height: 150px;
   font-family: Gotu;
   font-size: 400;
   color: #344033;
   font-size: 30px;
-  padding: 0 50px;
+  margin: 50px 0;
 }
 
 
@@ -176,6 +175,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 .section3 .info{
   width: 33%;
@@ -192,18 +192,106 @@
   letter-spacing: 1px;
 }
 .section3 .info img{
-  width: 400px;
+  width: 300px;
   border-radius: 50%;
   margin-bottom: 40px;
 }
 
 
 
+/* * FOOTER * */
 
+.footer{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Archivo;
+  color: #344033;
+  letter-spacing: 1px;
+}
+.footer h1{
+  color: #344033;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.footer span{
+  font-size: 20px;
+}
+.btn{
+  margin-top: 40px;
+}
+.btn button a{
+  text-decoration: none;
+  color: #344033;
+}
+.btn button{
+  letter-spacing: .5px;
+  font-size: 15px;
+  color: #344033;
+  margin-right: 10px;
+  padding: 13px 30px;
+  border-radius: 30px;
+  background-color: #f5eede;
+  border: 1px solid #344033;
+  font-weight: 600;
+  transition: all .3s ease-in-out;
+}
+.btn button:hover{
+  cursor: pointer;
+  background-color: #344033;
+  color: #f5eede;
+}
 
+/* FOOTER 2 */
 
+.footer2{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 70px;
+}
+.footer2 ul{
+  display: flex;
+}
+.footer2 ul a{
+  color: #344033;
+}
+.footer2 ul li{
+  margin-right: 20px;
+}
+.footer2 ul li:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.footer2 img{
+  width: 30px;
+}
+.redes a{
+  margin-right: 20px;
+}
 
-
+.terminos{
+  width: 100%;
+}
+.terminos ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  font-size: 12px;
+  color: #344033;
+}
+.terminos ul li a{
+  text-decoration: none;
+  color: #344033;
+}
+.juan:hover{
+  text-decoration: underline;
+}
 
 
 
@@ -211,6 +299,9 @@
 /* MOBILE */
 
 @media screen and (max-width: 480px) {
+  .container{
+    width: 100%;
+  }
   .portada{
     height: 90vh;
     padding-left: 10px;
@@ -222,27 +313,22 @@
       font-size: 30px;
     }
   .separador{
-    width: 100%;
-    display: flex;
     text-align: center;
-    height: 250px;
-    font-family: Gotu;
     font-size: 20px;
   }
   .section1{
     width: 100%;
     flex-wrap: wrap;
-    margin-bottom: 50px;
 
   }
   .section1 img{
     width: 100%;
     padding: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   .section1 .info{
-    margin-top: 0px;
     padding: 0 20px;
+    margin-bottom: 20px;
     width: 100%;
     line-height: 35px;
     font-size: 17px;
@@ -292,6 +378,56 @@
     width: 250px;
     border-radius: 50%;
     margin-bottom: 40px;
+  }
+  .footer{
+    height: 40vh;
+  }
+  .footer h1{
+    color: #344033;
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .footer span{
+    font-size: 15px;
+  }
+  .footer p{
+    font-size: 12px;
+  }
+  .btn{
+    margin-top: 40px;
+  }
+  .btn button{
+    font-size: 10px;
+    margin-right: 10px;
+  }
+
+
+  .footer2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-bottom: 20px;
+  }
+  .footer2 ul{
+    display: block;
+    padding: 20px 0;
+  }
+  .footer2 ul li{
+    margin-right: 0px;
+    padding: 15px 0;
+  }
+
+  .footer2 img{
+    width: 30px;
+  }
+  .redes a{
+    margin-right: 20px;
+  }
+  
+  .terminos{
+    padding: 0 20px;
   }
 
 }

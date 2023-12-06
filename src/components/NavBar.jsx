@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useState } from 'react';
 import '../components/NavBar.css';
+import { NavLink } from 'react-router-dom';
 const NavBar = () => {
 
     const [active, setActive] = useState(false);
@@ -17,18 +18,21 @@ const NavBar = () => {
     <>
         <header>
             <nav className="navbar">
-                <a href="#" className="nav-branding">VYOM <span>Movement</span></a>
+                {/* <a href="#" className="nav-branding">VYOM <span>Movement</span></a> */}
+                <NavLink to={"/"} className="nav-branding" >VYOM <span>Movement</span></NavLink>
+
 
                 <ul className={active ? "nav-menu active" : "nav-menu"}>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link" onClick={handleSetActive}>Sobre mi</a>
+                    <li className="nav-item" onClick={handleSetActive}>
+                        <NavLink to={"/sobremi"} className="nav-link" >Sobre mi</NavLink>
                     </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link" onClick={handleSetActive}>Cursos</a>
+                    <li className="nav-item" onClick={handleSetActive}>
+                        <NavLink to={"/sobremi"} className="nav-link" >Cursos</NavLink>
                     </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link" onClick={handleSetActive}>Contacto</a>
+                    <li className="nav-item" onClick={handleSetActive}>
+                        <NavLink to={"/sobremi"} className="nav-link" >Contacto</NavLink>
                     </li>
+                  
                 </ul>
 
                 <div className={active ? "hamburger active" : "hamburger"} onClick={handleSetActive}>

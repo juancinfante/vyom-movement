@@ -12,6 +12,7 @@ header{
 }
 li{
     list-style: none;
+    font-family: Archivo;
 }
 
 a{
@@ -43,10 +44,10 @@ a{
     font-size: 15px;
 }
 .nav-link{
-    transition: 0.7s ease;
+    transition: 0.2s ease;
     color: #344033;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 30px;
 
 }
 
