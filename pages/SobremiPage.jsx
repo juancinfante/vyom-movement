@@ -15,7 +15,7 @@ const SobremiPage = () => {
                     <h1>Sobre mi</h1>
                 </div>
             <div className="container">
-                <div className="section1 ">
+                <div className="section1 mt-50">
                     <img src={ag1} alt="" />
                     <div className="info">
                         <p className="">Hola! 
