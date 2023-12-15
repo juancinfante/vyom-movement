@@ -431,8 +431,10 @@
     padding: 0 20px;
   }
   .banner-clase h1{
-
-    font-size: 2rem !important;
+    font-size: 3rem !important;
+  }
+  .banner-clase{
+    height: 200px !important;
   }
   .clases{
     flex-direction: column;
