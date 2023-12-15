@@ -23,10 +23,13 @@ const Footer = () => {
    <div className="footer2">
       <ul>
         <li>
+            <NavLink to={'/'}>Home</NavLink>
+        </li>
+        <li>
             <NavLink to={'/sobremi'}>Sobre mi</NavLink>
         </li>
         <li>
-            <NavLink to={'/sobremi'}>Cursos</NavLink>
+            <NavLink to={'/clases'}>Cursos</NavLink>
         </li>
         <li>
             <NavLink to={'/sobremi'}>Contacto</NavLink>

@@ -26,7 +26,7 @@
   box-sizing: border-box;
 }
 .container{
-  width: 1300px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -301,6 +301,7 @@
 @media screen and (max-width: 480px) {
   .container{
     width: 100%;
+    padding: 0 20px;
   }
   .portada{
     height: 90vh;
@@ -323,11 +324,11 @@
   }
   .section1 img{
     width: 100%;
-    padding: 10px;
+    padding: 0px;
     margin-bottom: 20px;
   }
   .section1 .info{
-    padding: 0 20px;
+    padding: 0 0px;
     margin-bottom: 20px;
     width: 100%;
     line-height: 35px;
@@ -429,7 +430,146 @@
   .terminos{
     padding: 0 20px;
   }
+  .banner-clase h1{
+
+    font-size: 2rem !important;
+  }
+  .clases{
+    flex-direction: column;
+    align-items: center;
+  }
+  .clase{
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .info-clase h1{
+    font-size: 1.6rem;
+  }
 
 }
 
 
+/**** CLASES ****/
+
+.clases{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-family: Archivo;
+  color: #344033;
+}
+
+.clase{
+  width: 30%;
+  background-color: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 13px 13px 17px 11px rgba(206.24999999999997, 206.24999999999997, 206.24999999999997, 0.3);
+}
+.clase img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  filter: brightness( 56% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg )
+}
+.clase .info{
+  padding: 30px 20px;
+}
+.clase h4{
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+.clase p{
+  line-height: 23px;
+  margin-bottom: 20px;
+  color: grey;
+}
+.clase a{
+  color: black;
+  border: 1px solid #344033;
+  padding: 5px 20px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+.clase a:hover{
+  background-color: #344033;
+  color: white;
+}
+
+/**** CLASE 1 ****/
+
+.banner-clase{
+  height: 300px;
+  position: relative;
+  color: #f5eede;
+  font-family: Archivo;
+}
+.banner-clase img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner-clase h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-size: 4rem;
+  width: 100%;
+  padding: 0 30px;
+  text-align: center;
+}
+.info-clase{
+  padding-top: 50px;
+  color: #344033;
+
+}
+.info-clase h1{
+  font-family: Gotu;
+  margin-bottom: 10px;
+}
+.info-clase p{
+  font-family: Archivo;
+  line-height: 25px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.underline{
+  text-decoration: underline;
+}
+table{
+  margin-bottom: 30px;
+}
+table, th, td{
+  border: 2px solid #344033;
+  border-collapse: collapse;
+  font-family: Archivo;
+}
+th, td{
+  padding: 10px;
+}
+.link{
+  color: #344033;
+  text-decoration: underline;
+}
+.btn-inscripcion{
+  color: #344033;
+  font-size: 1.5rem;
+  border: 1px solid;
+  padding: 5px 20px;
+  transition: all .3s;
+}
+.btn-inscripcion:hover{
+  background-color: #344033;
+  color: white;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.mt-50{
+  margin-top: 50px;
+}
+.tabla-responsive{
+  overflow-x:auto;
+}

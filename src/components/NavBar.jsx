@@ -27,7 +27,7 @@ const NavBar = () => {
                         <NavLink to={"/sobremi"} className="nav-link" >Sobre mi</NavLink>
                     </li>
                     <li className="nav-item" onClick={handleSetActive}>
-                        <NavLink to={"/sobremi"} className="nav-link" >Cursos</NavLink>
+                        <NavLink to={"/clases"} className="nav-link" >Clases</NavLink>
                     </li>
                     <li className="nav-item" onClick={handleSetActive}>
                         <NavLink to={"/sobremi"} className="nav-link" >Contacto</NavLink>

@@ -1,12 +1,20 @@
+import ag1 from '../src/assets/ag1.png';
+import ag2 from '../src/assets/ag2.png';
+import ag3 from '../src/assets/ag3.png';
 import ag4 from '../src/assets/ag4.png';
 import ag5 from '../src/assets/ag5.png';
 import ag6 from '../src/assets/ag6.png';
 import pose1 from '../src/assets/pose1.jpg';
 import pose2 from '../src/assets/pose2.jpg';
 import pose3 from '../src/assets/pose3.jpg';
+import clase1 from '../src/assets/clase1.jpg';
+import clase2 from '../src/assets/clase2.jpg';
+import clase3 from '../src/assets/clase3.jpg';
 import NavBar from '../src/components/NavBar';
-import Sobremi from '../src/components/Sobremi';
 import Footer from '../src/components/Footer';
+import { Link } from 'react-router-dom';
+
+
 
 const HomePage = () => {
   return (
@@ -65,8 +73,65 @@ const HomePage = () => {
         </div>
       </div>
 
-    <Sobremi />  
+      <h1 className="separador" id="sobremi">Sobre mi</h1>
+    
+    <div className="section1 ">
+  <img src={ag1} alt="" />
+  <div className="info">
+    <p className="">Hola! 
+    Mi nombre es Agustina Suarez. Es un placer estar aquí para compartir un poco sobre mi viaje y pasión por el yoga.
+    Soy instructora de yoga certificada con una formación integral obtenida en el Centro Samastah de México. Este proceso de formación me brindó una triple certificación que abarca Hatha, Vinyasa y Ashtanga Yoga, permitiéndome explorar y enseñar diversas modalidades.
+    </p>
+  </div>
+</div>
+      <div className="section1">
+      <img src={ag2} alt=""  className="visible"/>
+        <div className="info">
+          <p>Además, cuento con la certificación como instructora de stretching y corrección postural otorgada por AMAIP. Esta formación me ha permitido abordar el bienestar integral, no solo a través de las prácticas de yoga, sino también mediante enfoques específicos para mejorar la postura y la flexibilidad.
+          </p>
+        </div>
+        <img src={ag2} alt="" className="visible2"/>
+      </div>
+
+      <div className="section1">
+        <img src={ag3} alt="" />
+        <div className="info">
+          <p>Constantemente busco la mejora y el perfeccionamiento, participando en cursos y talleres que enriquecen mi práctica y mi capacidad como instructora. Para mí el aprendizaje es un viaje continuo y estoy comprometida con brindar lo mejor a mis estudiantes.
+          </p>
+        </div>
+      </div>
+    <h1 className="separador">Clases</h1>
+
+    <div className="clases">
+      <div className="clase">
+        <img src={clase1} alt="" />
+        <div className="info">
+          <h4>Streching - Nivel 1</h4>
+          <p>Este programa está abierto a personas que tengan o no experiencia previa en el entrenamiento de la flexibilidad</p>
+          <Link to={'/clase1'}>Ver mas →</Link>
+        </div>
+      </div>
+      <div className="clase">
+        <img src={clase2} alt="" />
+        <div className="info">
+          <h4>Clases regulares de flexibilidad</h4>
+          <p>En este programa, nos encontramos dos veces por semana para explorar el mundo del entrenamiento de la flexibilidad.</p>
+          <Link to={'/clase2'}>Ver mas →</Link>
+        </div>
+      </div>
+      <div className="clase">
+        <img src={clase3} alt="" />
+        <div className="info">
+          <h4>Hatha vinyasa Yoga</h4>
+          <p>Este programa está abierto a personas que tengan o no experiencia previa en el entrenamiento de la flexibilidad</p>
+          <Link to={'/clase1'}>Ver mas →</Link>
+        </div>
+      </div>
+    </div>
     <Footer />
+
+
+
     </div>
     </div>
     </>
