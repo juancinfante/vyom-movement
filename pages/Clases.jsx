@@ -36,9 +36,9 @@ const Clases = () => {
                     <div className="clase">
                         <img src={clase3} alt="" />
                         <div className="info">
-                        <h4>Hatha vinyasa Yoga</h4>
+                        <h4>Hatha vinyasa</h4>
                         <p>Este programa está abierto a personas que tengan o no experiencia previa en el entrenamiento de la flexibilidad</p>
-                        <Link to={'/clase1'}>Ver mas →</Link>
+                        <Link to={'/clase3'}>Ver mas →</Link>
                         </div>
                     </div>
                     </div>
