@@ -575,3 +575,118 @@ th, td{
 .tabla-responsive{
   overflow-x:auto;
 }
+
+/* PAGINA CONTACTO */
+
+.form-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Archivo;
+}
+
+
+.info-form{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  color: #344033;
+}
+.info-form h1{
+  font-size: 40px;
+}
+.info-form p{
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.info-form p:nth-child(3){
+  font-family: cursive;
+  margin-top: 10px;
+}
+.info-form p a{
+  color: #344033;
+  text-decoration: underline;
+}
+
+form{
+  width: 50%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+  justify-content: center;
+}
+
+form input{
+  height: 40px;
+  padding: 20px;
+  background-color: #f5eede;
+  border: 1px solid #0000001d;
+}
+form textarea{
+  padding: 20px;
+  background-color: #f5eede;
+  border: 1px solid #0000001d;
+}
+
+form button{
+  height: 30px;
+  width: 100px;
+  background-color: #344033;
+  color: white;
+  border: none;
+}
+
+
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+
+@media screen and (max-width: 480px){
+  
+.info-form{
+  width: 100%;
+}
+
+form{
+  width: 100%;
+}
+
+
+}

@@ -5,6 +5,7 @@ import ScrollToTop from "../src/components/ScrollToTop";
 import Clase1 from "../pages/Clase1";
 import Clase2 from "../pages/Clase2";
 import Clases from "../pages/Clases";
+import Contacto from "../pages/Contacto";
 const AppRouter = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const AppRouter = () => {
                 <Route path="/clases" element={<Clases />}/>
                 <Route path="/clase1" element={<Clase1 />}/>
                 <Route path="/clase2" element={<Clase2 />}/>
+                <Route path="/contacto" element={<Contacto />}/>
                 {/* <Route path="*" element={<Error404 />}/> */}
             </Routes>
         </BrowserRouter>

@@ -30,7 +30,7 @@ const NavBar = () => {
                         <NavLink to={"/clases"} className="nav-link" >Clases</NavLink>
                     </li>
                     <li className="nav-item" onClick={handleSetActive}>
-                        <NavLink to={"/sobremi"} className="nav-link" >Contacto</NavLink>
+                        <NavLink to={"/contacto"} className="nav-link" >Contacto</NavLink>
                     </li>
                   
                 </ul>
